@@ -29,7 +29,10 @@ pipeline {
                 echo "Building virtualenv"
                 sh  ''' conda create --yes -n ${BUILD_TAG} python
                         source activate ${BUILD_TAG}
+                        pip install scipy
+                        pip install Click
                         pip install numpy
+                        pip install scikit-learn
                         pip install -r requirements/dev.txt
                     '''
             }
