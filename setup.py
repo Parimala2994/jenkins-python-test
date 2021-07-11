@@ -9,10 +9,6 @@
 from setuptools import setup, find_packages
 
 
-requirements = [
-	'scipy', 'numpy', 'scikit-learn', 'Click'
-]
-
 test_requirements=[
 	'behave'
 ]
